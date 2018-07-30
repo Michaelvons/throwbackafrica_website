@@ -1,0 +1,237 @@
+@font-face {
+  font-family: Lato-Black;
+  src: url(../font/Lato-Black.ttf);
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url(../font/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: Lato-Regular;
+  src: url(../font/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato-Light;
+  src: url(../font/Lato-Light.ttf);
+}
+
+body{
+  margin: 0px;
+  font-family: Lato-Regular;
+  letter-spacing: .5px;
+}
+
+.main-hero{
+  background-image: url(../image/bg.jpg);
+  height: 80vh;
+  background-size: cover;
+  padding: 0px 64px;
+  align-items: center;
+  display: flex;
+  background-position: top;
+}
+
+.main-header{
+  display: flex;
+  padding: 24px 64px;
+}
+
+.main-menu-brand{
+  display: flex;
+  flex-basis: 50%;
+}
+
+.main-menus{
+  display: flex;
+  flex-basis: 70%;
+  justify-content: flex-end;
+}
+
+.main-menus button{
+  margin: 0px 16px 0px 16px;
+  border: none;
+  color: black;
+  font-weight: 600;
+  background-color: white;
+}
+
+.main-caption{
+  max-width: 600px;
+}
+
+.main-caption p{
+  font-size: 60px;
+  margin-top: 0px;
+  font-family: Lato-Black;
+}
+
+.main-caption button{
+  background-color: #EF9610;
+  border: none;
+  padding: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.section-banner button{
+  background-color: #EF9610;
+  border: none;
+  padding: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  max-height: 48px
+}
+
+.gallery{
+  background-color: black;
+  padding: 64px;
+}
+
+.gallery-caption{
+  color: #838380;
+  text-align: center;
+  font-size: 32px;
+}
+
+.gallery-image{
+  background-image: url(../image/lagbaja.png);
+  background-size: cover;
+  background-position: center;
+  max-height: 350px;
+  border-radius:6px;
+  width: auto !important;
+  /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.gallery-image:hover{
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.05);
+}
+
+.gallery-twitter{
+  color: #838380;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 4px;
+  letter-spacing: 2px;
+}
+
+.gallery-title{
+  color: #EF9610;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+}
+
+.gallery-items{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.gallery-prev{
+  left: 16px;
+}
+
+.gallery-next{
+  right: 88px;
+}
+
+.gallery-next:hover{
+  background-color: #eae3e3;
+}
+
+.gallery-prev:hover{
+  background-color: #eae3e3;
+}
+
+.gallery-nav{
+  z-index: 1;
+  border: none;
+  width: 64px;
+  border-radius: 100px;
+  background-color: #EF9610;
+  height: 64px;
+  position: absolute;
+  opacity: .8;
+  top: 30%;
+}
+
+.gallery-button-image{
+  height: 24px;
+}
+
+.gallery-container{
+  position: relative;
+}
+
+.section-story{
+  height: 80vh;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+}
+
+.section-story-title{
+  background-image: url(../image/rectangle.png);
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-story-title p{
+  font-size: 120px;
+  color: #EF9610;
+  margin: 0px;
+  font-weight: 600;
+}
+
+.section-story-story{
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  font-size: 24px;
+  color: #424242;
+  align-items: center;
+}
+
+.section-story-story p{
+  max-width: 400px;
+}
+
+.section-banner{
+  background-color: #2a2a2a;
+  padding: 32px 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #f1f1f1;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.section-banner p{
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+footer{
+  background-color: black;
+  padding: 64px;
+  color: #EF9610;
+  display: flex;
+  justify-content: space-around;
+}
