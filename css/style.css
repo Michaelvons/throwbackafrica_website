@@ -129,6 +129,7 @@ body{
   font-size: 18px;
   margin-bottom: 0px;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .gallery-items{
@@ -234,4 +235,97 @@ footer{
   color: #EF9610;
   display: flex;
   justify-content: space-around;
+}
+
+.main-menu-brand button{
+  background-color: transparent;
+  border: none;
+}
+
+.main-logo{
+  width: 32px;
+}
+
+.gallery-border{
+  width: 8px;
+  background-color: red;
+}
+
+/*MEDIA QUERIES*/
+
+@media  only screen and (max-width: 1600px) {
+  .main-caption p{
+    color: pink;
+  }
+}
+@media only screen and (max-width : 1200px){
+  .main-caption p{
+    color: purple;
+  }
+}
+@media only screen and (max-width : 992px){
+  .main-caption p{
+    color: blue;
+  }
+}
+@media only screen and (max-width : 768px){
+  .main-caption p{
+    color: green;
+  }
+}
+@media only screen and (max-width : 480px){
+  .main-caption p{
+    color: yellow;
+    font-size: 40px;
+  }
+
+  .section-story{
+    flex-direction: column;
+  }
+
+  .main-hero{
+    padding: 0px 32px;
+  }
+
+  .main-header {
+    display: flex;
+    padding: 24px 32px;
+  }
+
+  .gallery-next {
+    right: 0px;
+  }
+
+  .gallery-prev {
+    left: 0px;
+  }
+
+  .owl-dots{
+    display: none;
+  }
+
+  .section-story-title p{
+    font-size: 72px;
+  }
+
+  .section-story-story p{
+    padding: 32px;
+    margin-top: 120px;
+  }
+
+  .section-banner{
+    margin-top: 120px;
+    padding: 32px 32px;
+        flex-direction: column;
+  }
+
+  .section-banner p{
+    margin-bottom: 32px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width : 320px){
+  .main-caption p{
+    color: red;
+  }
 }
